@@ -1,22 +1,13 @@
 {
   "reels": [
     {
-      "title": "Jaipur Zardosi Stitching",
-      "tag": "#EmbroideryArt",
-      "logTitle": "Karigar's Log",
-      "logNote": "Mukesh Ji (Master Karigar) finished 180 hours of zardosi stitches on crimson silk today.",
-      "url": "https://www.instagram.com/reel/C8_zRajwadi1",
-      "image": "assets/gallery-1.png",
-      "colorGroup": "gold"
-    },
-    {
-      "title": "Saree Transformation Reel",
-      "tag": "#HeritageRevival",
-      "logTitle": "Revival Log",
-      "logNote": "Draped Grandma's wedding saree into a modern lehenga. Heritage preserved.",
-      "url": "https://www.instagram.com/reel/C8_zRajwadi2",
-      "image": "assets/heritage-transform.png",
-      "colorGroup": "magenta"
+      "title": "Bandhani Lehenga & Bridal Swag",
+      "tag": "#Client Diaries",
+      "logTitle": "Client Diaries",
+      "logNote": "Our beautiful client showing off her incredible style and swag in our bespoke champagne gold silk lehenga. The heavily embellished vibrant red Bandhani dupatta adds the perfect traditional touch to her ultra-cool, modern aesthetic. We love seeing our pieces worn with such confidence!",
+      "url": "https://www.instagram.com/p/DLKcr3KvMpw/?utm_source=ig_web_copy_link&igsi=MzRlODBiNWFlZA==",
+      "image": "/assets/uploads/screenshot-2026-08-24-at-5.07.05 pm.png",
+      "colorGroup": "red"
     },
     {
       "title": "Midnight Black Indo-Western Co-ord",
@@ -26,6 +17,15 @@
       "url": "https://www.instagram.com/p/DXy7za1AdWz/?utm_source=ig_web_copy_link&igsi=MzRlODBiNWFlZA==",
       "image": "/assets/uploads/screenshot-2026-08-24-at-5.03.35 pm.png",
       "colorGroup": "dark"
+    },
+    {
+      "url": "https://www.instagram.com/reel/CyvDco-vOOw/?utm_source=ig_web_copy_link&igsi=MzRlODBiNWFlZA==",
+      "tag": "#FestiveWear",
+      "logTitle": "Karigar's Log:",
+      "logNote": "A bright and vibrant yellow draped saree designed for the modern woman. Featuring elegant cascading ruffles and exquisite floral vine hand-embroidery along the borders, this outfit is the perfect blend of playful energy and traditional craftsmanship.",
+      "title": "Vibrant Yellow Ruffle Saree",
+      "colorGroup": "gold",
+      "image": "/assets/uploads/screenshot-2026-08-24-at-4.58.01 pm.png"
     },
     {
       "title": "Fuchsia Pink Leheriya Cape Saree",
@@ -53,15 +53,6 @@
       "url": "https://www.instagram.com/p/DSwxgfkj8A_/?utm_source=ig_web_copy_link&igsi=MzRlODBiNWFlZA==",
       "image": "/assets/uploads/screenshot-2026-08-24-at-4.20.14 pm.png",
       "colorGroup": "pastel"
-    },
-    {
-      "url": "https://www.instagram.com/reel/CyvDco-vOOw/?utm_source=ig_web_copy_link&igsi=MzRlODBiNWFlZA==",
-      "tag": "#FestiveWear",
-      "logTitle": "Karigar's Log:",
-      "logNote": "A bright and vibrant yellow draped saree designed for the modern woman. Featuring elegant cascading ruffles and exquisite floral vine hand-embroidery along the borders, this outfit is the perfect blend of playful energy and traditional craftsmanship.",
-      "title": "Vibrant Yellow Ruffle Saree",
-      "colorGroup": "gold",
-      "image": "/assets/uploads/screenshot-2026-08-24-at-4.58.01 pm.png"
     }
   ]
 }
