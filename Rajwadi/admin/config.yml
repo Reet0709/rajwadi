@@ -1,10 +1,9 @@
 backend:
   name: git-gateway
-  branch: main # Branch to update (optional; defaults to master)
+  branch: main
 
-media_folder: "assets/uploads"
+media_folder: "Rajwadi/assets/uploads"
 public_folder: "/assets/uploads"
-
 logo_url: "https://rajwadiboutique.com/assets/logo.png"
 
 collections:
@@ -13,7 +12,7 @@ collections:
     files:
       - label: "Unstitched Suits"
         name: "suits"
-        file: "data/suits.json"
+        file: "Rajwadi/data/suits.json"
         fields:
           - label: "Suits Inventory"
             name: "suits"
@@ -31,7 +30,7 @@ collections:
     files:
       - label: "Instagram Reels"
         name: "reels"
-        file: "data/reels.json"
+        file: "Rajwadi/data/reels.json"
         fields:
           - label: "Reels Inventory"
             name: "reels"
@@ -50,7 +49,7 @@ collections:
     files:
       - label: "Client Testimonials"
         name: "testimonials"
-        file: "data/testimonials.json"
+        file: "Rajwadi/data/testimonials.json"
         fields:
           - label: "Testimonials"
             name: "testimonials"
