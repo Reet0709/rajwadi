@@ -1,0 +1,62 @@
+backend:
+  name: git-gateway
+  branch: main # Branch to update (optional; defaults to master)
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+logo_url: "https://rajwadiboutique.com/assets/logo.png"
+
+collections:
+  - name: "shop"
+    label: "Shop Management"
+    files:
+      - label: "Unstitched Suits"
+        name: "suits"
+        file: "data/suits.json"
+        fields:
+          - label: "Suits Inventory"
+            name: "suits"
+            widget: "list"
+            fields:
+              - {label: "Suit Name", name: "name", widget: "string"}
+              - {label: "Price (INR)", name: "price", widget: "number"}
+              - {label: "Fabric", name: "fabric", widget: "select", options: ["silk", "cotton", "georgette", "chiffon", "chanderi"]}
+              - {label: "Work Type", name: "work", widget: "select", options: ["zardozi", "gota-patti", "thread-work", "printed", "handwork"]}
+              - {label: "Color Group", name: "colorGroup", widget: "select", options: ["red", "green", "blue", "gold", "pastel", "dark"]}
+              - {label: "Image", name: "image", widget: "image"}
+              
+  - name: "atelier"
+    label: "Digital Atelier (Reels)"
+    files:
+      - label: "Instagram Reels"
+        name: "reels"
+        file: "data/reels.json"
+        fields:
+          - label: "Reels Inventory"
+            name: "reels"
+            widget: "list"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Instagram Reel URL", name: "url", widget: "string"}
+              - {label: "Tag (e.g. #Bridal)", name: "tag", widget: "string"}
+              - {label: "Log Title", name: "logTitle", widget: "string"}
+              - {label: "Log Note", name: "logNote", widget: "text"}
+              - {label: "Color Theme", name: "colorGroup", widget: "string"}
+              - {label: "Video Cover Image", name: "image", widget: "image"}
+
+  - name: "heritage_diary"
+    label: "Heritage Diary (Testimonials)"
+    files:
+      - label: "Client Testimonials"
+        name: "testimonials"
+        file: "data/testimonials.json"
+        fields:
+          - label: "Testimonials"
+            name: "testimonials"
+            widget: "list"
+            fields:
+              - {label: "Date", name: "date", widget: "string"}
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Review Body", name: "body", widget: "text"}
+              - {label: "Signature (Name)", name: "signature", widget: "string"}

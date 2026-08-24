@@ -1,0 +1,58 @@
+{
+  "reels": [
+    {
+      "title": "Jaipur Zardosi Stitching",
+      "tag": "#EmbroideryArt",
+      "logTitle": "Karigar's Log",
+      "logNote": "Mukesh Ji (Master Karigar) finished 180 hours of zardosi stitches on crimson silk today.",
+      "url": "https://www.instagram.com/reel/C8_zRajwadi1",
+      "image": "assets/gallery-1.png",
+      "colorGroup": "gold"
+    },
+    {
+      "title": "Saree Transformation Reel",
+      "tag": "#HeritageRevival",
+      "logTitle": "Revival Log",
+      "logNote": "Draped Grandma's wedding saree into a modern lehenga. Heritage preserved.",
+      "url": "https://www.instagram.com/reel/C8_zRajwadi2",
+      "image": "assets/heritage-transform.png",
+      "colorGroup": "magenta"
+    },
+    {
+      "title": "Royal Bridal Lehenga Showcase",
+      "tag": "#BridalCouture",
+      "logTitle": "Bridal Log",
+      "logNote": "Royal red velvet bridal lehenga with pure gold zari borders, tailored for Neha's wedding.",
+      "url": "https://www.instagram.com/reel/C8_zRajwadi3",
+      "image": "assets/bridal-couture.png",
+      "colorGroup": "red"
+    },
+    {
+      "title": "Fusion Western Gown Flow",
+      "tag": "#CustomWear",
+      "logTitle": "Fusion Log",
+      "logNote": "Stitched modern fusion gown using organic silk fabrics from local weavers.",
+      "url": "https://www.instagram.com/reel/C8_zRajwadi4",
+      "image": "assets/custom-ethnic.png",
+      "colorGroup": "emerald"
+    },
+    {
+      "title": "Unboxing Banarasi Silk Yards",
+      "tag": "#JaipurLooms",
+      "logTitle": "Loom Log",
+      "logNote": "Hand-selecting Banarasi silk yards directly from the traditional loom. 100% authentic.",
+      "url": "https://www.instagram.com/reel/C8_zRajwadi5",
+      "image": "assets/gallery-3.png",
+      "colorGroup": "purple"
+    },
+    {
+      "title": "Banarasi Brocade Silk Touch",
+      "tag": "#PureBanarasi",
+      "logTitle": "Weave Log",
+      "logNote": "Integrating traditional brocade silk borders to add a royal Jaipur touch.",
+      "url": "https://www.instagram.com/reel/C8_zRajwadi6",
+      "image": "assets/fabric-silk.png",
+      "colorGroup": "turquoise"
+    }
+  ]
+}

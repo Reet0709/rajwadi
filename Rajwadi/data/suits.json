@@ -1,0 +1,52 @@
+{
+  "suits": [
+    {
+      "name": "Gulabi Chanderi Suit",
+      "price": 3999,
+      "fabric": "chanderi",
+      "work": "handwork",
+      "colorGroup": "pastel",
+      "image": ""
+    },
+    {
+      "name": "Shahi Velvet Anarkali",
+      "price": 7499,
+      "fabric": "silk",
+      "work": "zardozi",
+      "colorGroup": "dark",
+      "image": ""
+    },
+    {
+      "name": "Neelkanth Cotton Suit",
+      "price": 1999,
+      "fabric": "cotton",
+      "work": "printed",
+      "colorGroup": "blue",
+      "image": ""
+    },
+    {
+      "name": "Rajwadi Bridal Lehenga Set",
+      "price": 24999,
+      "fabric": "silk",
+      "work": "zardozi",
+      "colorGroup": "gold",
+      "image": ""
+    },
+    {
+      "name": "Hara Panna Silk Suit",
+      "price": 4499,
+      "fabric": "silk",
+      "work": "thread-work",
+      "colorGroup": "green",
+      "image": ""
+    },
+    {
+      "name": "Jaipur Gold Zardosi Set",
+      "price": 14999,
+      "fabric": "georgette",
+      "work": "zardozi",
+      "colorGroup": "gold",
+      "image": ""
+    }
+  ]
+}

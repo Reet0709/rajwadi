@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rajwadi Boutique - Admin Dashboard</title>
+  <!-- Load Supabase JS Client -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <style>
+    :root {
+      --bg: #F8F5F0;
+      --gold: #C5A059;
+      --text: #2c2c2c;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 2rem;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    }
+    h1 {
+      color: var(--gold);
+      border-bottom: 2px solid var(--gold);
+      padding-bottom: 10px;
+    }
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+    }
+    input, select {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      box-sizing: border-box;
+    }
+    button {
+      background-color: var(--gold);
+      color: white;
+      border: none;
+      padding: 1rem 2rem;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      width: 100%;
+    }
+    button:hover {
+      background-color: #a88544;
+    }
+    #auth-section { display: block; }
+    #dashboard-section { display: none; }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Rajwadi Admin</h1>
+
+  <!-- Login Section -->
+  <div id="auth-section">
+    <h2>Login to Dashboard</h2>
+    <div class="form-group">
+      <label>Email</label>
+      <input type="email" id="email" placeholder="admin@rajwadi.com">
+    </div>
+    <div class="form-group">
+      <label>Password</label>
+      <input type="password" id="password" placeholder="••••••••">
+    </div>
+    <button onclick="login()">Login</button>
+  </div>
+
+  <!-- Dashboard Section -->
+  <div id="dashboard-section">
+    <h2>Upload New Unstitched Suit</h2>
+    <form id="upload-form" onsubmit="uploadSuit(event)">
+      <div class="form-group">
+        <label>Suit Name</label>
+        <input type="text" id="suit-name" required placeholder="e.g. Royal Emerald Silk">
+      </div>
+      <div class="form-group">
+        <label>Fabric</label>
+        <select id="suit-fabric" required>
+          <option value="silk">Silk</option>
+          <option value="cotton">Cotton</option>
+          <option value="georgette">Georgette</option>
+          <option value="chiffon">Chiffon</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Work Type</label>
+        <select id="suit-work" required>
+          <option value="zardozi">Zardozi</option>
+          <option value="gota-patti">Gota Patti</option>
+          <option value="thread-work">Thread Work</option>
+          <option value="printed">Printed</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Color Group (For Filters)</label>
+        <select id="suit-color" required>
+          <option value="red">Red / Maroon</option>
+          <option value="green">Green</option>
+          <option value="blue">Blue</option>
+          <option value="gold">Gold / Yellow</option>
+          <option value="pastel">Pastel</option>
+          <option value="dark">Dark / Black</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Price (INR)</label>
+        <input type="number" id="suit-price" required placeholder="12500">
+      </div>
+      <div class="form-group">
+        <label>Image Photo</label>
+        <input type="file" id="suit-image" accept="image/*" required>
+      </div>
+      <button type="submit" id="submit-btn">Upload Suit</button>
+    </form>
+    
+    <div style="margin-top: 30px;">
+      <button onclick="logout()" style="background: #ccc; color: #333;">Logout</button>
+    </div>
+  </div>
+</div>
+
+<script src="admin.js"></script>
+</body>
+</html>

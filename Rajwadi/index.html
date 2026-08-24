@@ -1,0 +1,1297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rajwadi Boutique — Bespoke Customisation for Every Soul | Jaipur</title>
+  <meta name="description"
+    content="Rajwadi Boutique — Jaipur's premier customisation studio. Western, ethnic, bridal, kids, men's & women's wear. Heritage revival & heirloom transformation. Every thread, your story." />
+  <meta name="keywords"
+    content="Rajwadi Boutique, Jaipur boutique, custom ethnic wear, bridal lehenga, saree transformation, heirloom revival, western wear, kids clothing, men's wear, customisation" />
+  <meta property="og:title" content="Rajwadi Boutique — Bespoke Customisation for Every Soul" />
+  <meta property="og:description"
+    content="Premium customisation studio in Jaipur. Western, ethnic, bridal & heritage revival." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='none' stroke='%23C9A96E' stroke-width='1.5'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%23C9A96E'/%3E%3C/svg%3E" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  
+  <!-- Netlify Identity Widget for Decap CMS -->
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- Loading Screen -->
+  <div class="loader" id="loader">
+    <div class="loader-emblem">
+      <img src="assets/logo.png" alt="Rajwadi Logo" class="loader-logo-img" />
+    </div>
+    <div class="loader-text">RAJWADI</div>
+    <div class="loader-line"><span></span></div>
+  </div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot" id="cursor-dot"></div>
+  <div class="cursor-ring" id="cursor-ring"></div>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="#" class="nav-logo" aria-label="Rajwadi Boutique Home">
+        <img src="assets/logo.png" alt="Rajwadi" class="nav-logo-img" />
+        <div class="nav-logo-text">RAJWADI</div>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#craft">Services</a></li>
+        <li><a href="#suits-shop">Shop</a></li>
+        <li><a href="#our-story">About Us</a></li>
+        <li>
+          <a href="https://wa.me/918559985003?text=Hello%20Rajwadi%20Boutique%20Jaipur!%20%E2%9C%A8%20I%20would%20like%20to%20book%20a%20personal%20styling%20and%20couture%20consultation%20with%20your%20designers."
+            class="nav-cta" target="_blank" rel="noopener">Book Consultation</a>
+        </li>
+      </ul>
+      <div class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" role="button" tabindex="0">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section class="hero" id="hero" aria-label="Hero">
+    <!-- Interactive Mouse Spotlight -->
+    <div class="hero-spotlight" id="hero-spotlight" aria-hidden="true"></div>
+
+    <!-- Heritage Pattern Overlay -->
+    <div class="hero-pattern-overlay" aria-hidden="true"></div>
+
+    <!-- Mouse-reactive golden particles -->
+    <canvas id="hero-particles" aria-hidden="true"></canvas>
+
+    <!-- Animated background ornament SVG -->
+    <div class="hero-bg-ornament" aria-hidden="true">
+      <svg viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg" class="ornament-svg">
+        <circle cx="400" cy="400" r="300" stroke="var(--gold)" stroke-width="0.5" stroke-dasharray="8 12"
+          opacity="0.15">
+          <animateTransform attributeName="transform" type="rotate" from="0 400 400" to="360 400 400" dur="60s"
+            repeatCount="indefinite" />
+        </circle>
+        <circle cx="400" cy="400" r="250" stroke="var(--gold)" stroke-width="0.3" stroke-dasharray="4 8" opacity="0.1">
+          <animateTransform attributeName="transform" type="rotate" from="360 400 400" to="0 400 400" dur="45s"
+            repeatCount="indefinite" />
+        </circle>
+        <circle cx="400" cy="400" r="350" stroke="var(--gold)" stroke-width="0.3" stroke-dasharray="2 16"
+          opacity="0.08">
+          <animateTransform attributeName="transform" type="rotate" from="0 400 400" to="360 400 400" dur="80s"
+            repeatCount="indefinite" />
+        </circle>
+      </svg>
+    </div>
+
+    <!-- Hero Split Layout -->
+    <div class="hero-split" id="hero-parallax">
+
+      <!-- LEFT: Text Content -->
+      <div class="hero-left">
+        <div class="hero-left-inner">
+          <div class="hero-badge">
+            <span class="badge-line"></span>
+            Est. Jaipur
+            <span class="badge-line"></span>
+          </div>
+
+          <h1 class="hero-title">
+            <span class="hero-title-line anim-line" data-delay="0">Your silhouette, your colour,</span>
+            <span class="hero-title-line anim-line" data-delay="1">your details, your <em>dress.</em></span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Bridging high-end luxury fashion with deep emotional storytelling. We capture both the prestige of custom tailoring and the sentimental value of memory weaving, offering an intimate, story-driven experience.
+          </p>
+
+          <div class="hero-rotating-wrapper">
+            <span class="rotating-label">Core pillars</span>
+            <div class="rotating-words" id="rotating-words">
+              <span class="rotating-word active">Custom Tailoring for All</span>
+              <span class="rotating-word">Ethnic & Indo-Western</span>
+              <span class="rotating-word">Western & Casuals</span>
+              <span class="rotating-word">Premium Stitched Suits</span>
+              <span class="rotating-word">Memory Weaving</span>
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <a href="https://wa.me/918559985003?text=Hello%20Rajwadi%20Boutique%20Jaipur!%20%E2%9C%A8%20I%20would%20like%20to%20consult%20a%20designer%20about%20a%20custom%20dress%20design."
+              class="btn-primary magnetic" id="hero-cta-primary" target="_blank" rel="noopener">
+              Consult a Designer
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
+            <a href="#transformation" class="btn-outline magnetic" id="hero-cta-secondary">
+              See Transformations
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: Interactive Embroidery Hoop (Bespoke Adda Showcase) -->
+      <div class="hero-right">
+        <div class="hoop-container" id="hoop-container">
+          <!-- Outer wooden frame -->
+          <div class="hoop-outer-frame">
+            <div class="hoop-brass-clamp"></div>
+          </div>
+          <!-- Inner canvas -->
+          <div class="hoop-canvas">
+            <div class="hoop-image-wrapper">
+              <img id="hoop-main-img" src="assets/bridal-couture.png" alt="Custom bridal lehenga" />
+            </div>
+            <!-- SVG Overlay for reactive thread drawing -->
+            <svg class="hoop-thread-overlay" id="hoop-thread-svg" viewBox="0 0 440 440">
+              <path id="hoop-connecting-thread" d="" stroke="var(--gold)" stroke-width="1.5" stroke-linecap="round"
+                opacity="0" stroke-dasharray="4 4" />
+            </svg>
+            <!-- Center Emblem badge -->
+            <div class="hoop-center-emblem">
+              <img src="assets/logo.png" alt="Emblem" />
+            </div>
+          </div>
+
+          <!-- Circular Floating Interactive Nodes -->
+          <div class="hoop-node active" data-index="0" data-img="assets/gallery-2.png" data-title="All Genders & Kids"
+            data-desc="Bespoke custom tailoring for men, women, and little ones." style="--angle: 0deg;">
+            <div class="node-dot"></div>
+            <span class="node-label">Men, Women, Kids</span>
+          </div>
+          <div class="hoop-node" data-index="1" data-img="assets/custom-ethnic.png"
+            data-title="Ethnic & Indo-Western"
+            data-desc="From classic ethnic traditions to contemporary fusion wear." style="--angle: 120deg;">
+            <div class="node-dot"></div>
+            <span class="node-label">Ethnic & Fusion</span>
+          </div>
+          <div class="hoop-node" data-index="2" data-img="assets/western-gown.png" data-title="Western & Casuals"
+            data-desc="Chic everyday casuals and high-end luxury western wear." style="--angle: 180deg;">
+            <div class="node-dot"></div>
+            <span class="node-label">Western & Casuals</span>
+          </div>
+          <div class="hoop-node" data-index="3" data-img="assets/gallery-1.png" data-title="Stitched Suits"
+            data-desc="Explore our exclusive collection of ready-to-wear premium stitched suits." style="--angle: 240deg;">
+            <div class="node-dot"></div>
+            <span class="node-label">Stitched Suits</span>
+          </div>
+          <div class="hoop-node" data-index="4" data-img="assets/heritage-transform.png" data-title="Memory Weaving"
+            data-desc="Reimagining sentimental heirloom clothing into modern art." style="--angle: 300deg;">
+            <div class="node-dot"></div>
+            <span class="node-label">Memory Weaving</span>
+          </div>
+
+          <!-- Active Card Details Floating below/beside -->
+          <div class="hoop-details-card" id="hoop-details-card">
+            <h4 id="hoop-detail-title">All Genders & Kids</h4>
+            <p id="hoop-detail-desc">Bespoke custom tailoring for men, women, and little ones.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="hero-scroll">
+      <span>Discover</span>
+      <div class="scroll-line"></div>
+    </div>
+
+    <!-- Bottom decorative wave -->
+    <div class="hero-wave" aria-hidden="true">
+      <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path d="M0,60 C240,120 480,0 720,60 C960,120 1200,0 1440,60 L1440,120 L0,120 Z" fill="var(--bg-primary)" />
+      </svg>
+    </div>
+  </section>
+
+ 
+
+
+  <!-- ========== OUR SERVICES — Premium Atelier Categories ========== -->
+  <section class="services" id="craft" aria-label="Our Services">
+
+    <!-- Decorative background elements -->
+    <div class="services-bg-thread" aria-hidden="true">
+      <svg viewBox="0 0 1440 600" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path d="M-100 300 C 200 100, 500 500, 800 250 C 1100 0, 1300 400, 1540 200" stroke="url(#svc-thread-grad)"
+          stroke-width="1" stroke-dasharray="6 8" opacity="0.15" />
+        <path d="M-100 350 C 300 550, 600 50, 900 350 C 1200 650, 1400 150, 1540 400" stroke="url(#svc-thread-grad)"
+          stroke-width="0.5" stroke-dasharray="3 12" opacity="0.08" />
+        <defs>
+          <linearGradient id="svc-thread-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="var(--gold-dark)" />
+            <stop offset="50%" stop-color="var(--gold)" />
+            <stop offset="100%" stop-color="var(--gold-light)" />
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
+    <div class="services-bg-glow" aria-hidden="true"></div>
+
+    <div class="container">
+
+      <!-- Section Header -->
+      <div class="services-header">
+        <div class="section-label reveal">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+            style="vertical-align:-2px; margin-right:4px; color:var(--gold);">
+            <path d="M12 2L15 8.5H22L16.5 13L18.5 20L12 15.5L5.5 20L7.5 13L2 8.5H9L12 2Z" />
+          </svg>
+          What We Create
+        </div>
+        <h2 class="section-title reveal delay-1">
+          Bespoke for Every <span>Soul</span>
+        </h2>
+        <p class="section-subtitle reveal delay-2">
+          From classic ethnic wear to modern casuals — we customise clothing for men, women &amp; kids. We also offer premium stitched suits and upcycle your heirlooms. Every thread, every detail, made just for you.
+        </p>
+      </div>
+
+      <!-- Premium Interactive Split Cabinet Showcase -->
+      <div class="services-cabinet reveal delay-3">
+        <!-- LEFT: Stylized Design Showcase Interactive Triggers -->
+        <div class="cabinet-menu">
+          <!-- Item 1 -->
+          <div class="cabinet-item active" data-cabinet="all-genders">
+            <span class="cabinet-num">01</span>
+            <div class="cabinet-info">
+              <h3>Custom Tailoring for All</h3>
+              <p>Bespoke tailoring designed exactly to your silhouette for men, women, and kids.</p>
+            </div>
+            <a href="https://wa.me/918559985003?text=Hello%20Rajwadi%20Boutique%20Jaipur!%20%E2%9C%A8%20I%20am%20interested%20in%20Custom%20Tailoring."
+              class="cabinet-whatsapp-btn" target="_blank" rel="noopener">Enquire</a>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="cabinet-item" data-cabinet="ethnic-fusion">
+            <span class="cabinet-num">02</span>
+            <div class="cabinet-info">
+              <h3>Ethnic & Indo-Western</h3>
+              <p>From classic ethnic traditions to contemporary fusion wear for every occasion.</p>
+            </div>
+            <a href="https://wa.me/918559985003?text=Hello%20Rajwadi%20Boutique%20Jaipur!%20%E2%9C%A8%20I%20am%20interested%20in%20Ethnic%20%26%20Indo-Western%20wear."
+              class="cabinet-whatsapp-btn" target="_blank" rel="noopener">Enquire</a>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="cabinet-item" data-cabinet="western">
+            <span class="cabinet-num">03</span>
+            <div class="cabinet-info">
+              <h3>Western & Casuals</h3>
+              <p>Chic everyday casuals and high-end luxury western wear.</p>
+            </div>
+            <a href="https://wa.me/918559985003?text=Hello%20Rajwadi%20Boutique%20Jaipur!%20%E2%9C%A8%20I%20am%20interested%20in%20Western%20%26%20Casuals."
+              class="cabinet-whatsapp-btn" target="_blank" rel="noopener">Enquire</a>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="cabinet-item" data-cabinet="stitched-suits">
+            <span class="cabinet-num">04</span>
+            <div class="cabinet-info">
+              <h3>Premium Stitched Suits</h3>
+              <p>Explore our exclusive collection of ready-to-wear premium stitched suits.</p>
+            </div>
+            <a href="https://wa.me/918559985003?text=Hello%20Rajwadi%20Boutique%20Jaipur!%20%E2%9C%A8%20I%20am%20interested%20in%20Stitched%20Suits."
+              class="cabinet-whatsapp-btn" target="_blank" rel="noopener">Enquire</a>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="cabinet-item" data-cabinet="heritage">
+            <span class="cabinet-num">05</span>
+            <div class="cabinet-info">
+              <h3>Memory Weaving</h3>
+              <p>Preserving sentimental value by transforming heirloom clothing into modern art.</p>
+            </div>
+            <a href="https://wa.me/918559985003?text=Hello%20Rajwadi%20Boutique%20Jaipur!%20%E2%9C%A8%20I%20am%20interested%20in%20Memory%20Weaving."
+              class="cabinet-whatsapp-btn" target="_blank" rel="noopener">Enquire</a>
+          </div>
+        </div>
+
+        <!-- RIGHT: Interactive Visual Display Cabinet Frame -->
+        <div class="cabinet-display-panel">
+          <div class="display-frame-wrapper">
+            <div class="display-zardozi-frame">
+              <span class="frame-edge top"></span>
+              <span class="frame-edge bottom"></span>
+              <span class="frame-edge left"></span>
+              <span class="frame-edge right"></span>
+            </div>
+
+            <!-- Dynamic Images mapped to each service -->
+            <div class="cabinet-slides">
+              <div class="cabinet-slide active" id="slide-all-genders">
+                <img src="assets/gallery-2.png" alt="Custom Tailoring for All">
+                <div class="slide-overlay">
+                  <span class="slide-tag">Custom Tailoring for All</span>
+                </div>
+              </div>
+              <div class="cabinet-slide" id="slide-ethnic-fusion">
+                <img src="assets/custom-ethnic.png" alt="Ethnic & Indo-Western">
+                <div class="slide-overlay">
+                  <span class="slide-tag">Ethnic & Indo-Western</span>
+                </div>
+              </div>
+              <div class="cabinet-slide" id="slide-western">
+                <img src="assets/western-gown.png" alt="Western & Casuals">
+                <div class="slide-overlay">
+                  <span class="slide-tag">Western & Casuals</span>
+                </div>
+              </div>
+              <div class="cabinet-slide" id="slide-stitched-suits">
+                <img src="assets/gallery-1.png" alt="Premium Stitched Suits">
+                <div class="slide-overlay">
+                  <span class="slide-tag">Premium Stitched Suits</span>
+                </div>
+              </div>
+              <div class="cabinet-slide" id="slide-heritage">
+                <img src="assets/after_saree.png" alt="Memory Weaving">
+                <div class="slide-overlay">
+                  <span class="slide-tag">Memory Weaving</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom CTA Banner -->
+      <div class="services-cta reveal delay-4">
+        <div class="services-cta-inner">
+          <div class="services-cta-ornament" aria-hidden="true">
+            <svg viewBox="0 0 120 120" fill="none">
+              <circle cx="60" cy="60" r="55" stroke="var(--gold-light)" stroke-width="0.5" stroke-dasharray="4 6"
+                opacity="0.3">
+                <animateTransform attributeName="transform" type="rotate" from="0 60 60" to="360 60 60" dur="40s"
+                  repeatCount="indefinite" />
+              </circle>
+              <circle cx="60" cy="60" r="40" stroke="var(--gold)" stroke-width="0.3" stroke-dasharray="2 10"
+                opacity="0.2">
+                <animateTransform attributeName="transform" type="rotate" from="360 60 60" to="0 60 60" dur="30s"
+                  repeatCount="indefinite" />
+              </circle>
+            </svg>
+          </div>
+          <div class="services-cta-text">
+            <h3>Have something unique in mind?</h3>
+            <p>Tell us your dream — we'll craft it into reality. No idea is too big, no detail too small.</p>
+          </div>
+          <a href="https://wa.me/918559985003?text=Hello%20Rajwadi%20Boutique%20Jaipur%20!%20%E2%9C%A8%20I%20have%20a%20unique%20custom%20design%20idea%20I%20would%20like%20to%20discuss%20with%20your%20team."
+            class="btn-primary magnetic" target="_blank" rel="noopener">
+            Let's Create Together
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- END Services Section -->
+
+  <!-- ========== PREMIUM COLOUR WHEEL SECTION ========== -->
+  <section class="palette-section" id="palette" aria-label="Colour Wheel Picker">
+
+    <div class="palette-bg-pattern" aria-hidden="true"></div>
+    <div class="palette-bg-glow" aria-hidden="true"></div>
+
+    <div class="container">
+
+      <div class="palette-header">
+        <div class="section-label reveal">The Colour Atelier</div>
+        <h2 class="section-title reveal delay-1">
+          Pick Your Perfect <span>Color</span>
+        </h2>
+        <p class="section-subtitle reveal delay-2">
+          Spin the colour wheel to find your exact shade — click anywhere on the spectrum, adjust the brightness, and
+          share the code with us. No more guessing colour names!
+        </p>
+      </div>
+
+      <div class="colorwheel-layout reveal delay-3">
+
+        <!-- LEFT: The interactive colour wheel -->
+        <div class="colorwheel-left">
+          <div class="colorwheel-frame-outer" aria-hidden="true">
+            <div class="colorwheel-frame-ornament top"></div>
+            <div class="colorwheel-frame-ornament bottom"></div>
+            <div class="colorwheel-frame-ornament left"></div>
+            <div class="colorwheel-frame-ornament right"></div>
+          </div>
+          <div class="colorwheel-canvas-wrap">
+            <canvas id="color-wheel-canvas" width="320" height="320" aria-label="Colour spectrum wheel"></canvas>
+            <div class="colorwheel-cursor" id="colorwheel-cursor" aria-hidden="true">
+              <div class="cursor-inner"></div>
+            </div>
+          </div>
+          <!-- Brightness slider -->
+          <div class="brightness-slider-wrap">
+            <span class="brightness-label">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <circle cx="12" cy="12" r="5" />
+                <line x1="12" y1="1" x2="12" y2="3" />
+                <line x1="12" y1="21" x2="12" y2="23" />
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                <line x1="1" y1="12" x2="3" y2="12" />
+                <line x1="21" y1="12" x2="23" y2="12" />
+              </svg>
+              Brightness
+            </span>
+            <div class="brightness-track-wrap" id="brightness-track-wrap">
+              <div class="brightness-track" style="background: linear-gradient(90deg, #000, #888, #fff);">
+                <div class="brightness-fill" id="brightness-fill"></div>
+              </div>
+              <input type="range" id="brightness-slider" class="brightness-range" min="10" max="100" value="65"
+                aria-label="Adjust brightness">
+            </div>
+            <span class="brightness-value" id="brightness-value">65%</span>
+          </div>
+
+          <!-- Saturation slider -->
+          <div class="brightness-slider-wrap">
+            <span class="brightness-label">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M12 2a10 10 0 1 0 0 20" />
+                <path d="M12 2v20" />
+                <path d="M12 7c2.5 0 5 1.5 5 5s-2.5 5-5 5" />
+              </svg>
+              Vibrance
+            </span>
+            <div class="brightness-track-wrap" id="saturation-track-wrap">
+              <div class="brightness-track" id="saturation-track"
+                style="background: linear-gradient(90deg, #ccc, hsl(0,100%,50%) 33%, hsl(120,100%,50%) 66%, hsl(240,100%,50%));">
+              </div>
+              <input type="range" id="saturation-slider" class="brightness-range" min="0" max="100" value="100"
+                aria-label="Adjust saturation">
+            </div>
+            <span class="brightness-value" id="saturation-value">100%</span>
+          </div>
+
+          <!-- Mode hint chips -->
+          <div class="slider-mode-hints">
+            <span class="mode-hint" id="mode-hint-pastel">❀ Pastel (Vibrance ↓)</span>
+            <span class="mode-hint active" id="mode-hint-vivid">✦ Vivid (Vibrance ↑)</span>
+          </div>
+        </div>
+
+        <!-- RIGHT: Preview + info panel -->
+        <div class="colorwheel-right">
+
+          <div class="cw-preview-block">
+            <div class="cw-preview-color" id="cw-preview-color">
+              <div class="cw-preview-shine" aria-hidden="true"></div>
+              <div class="cw-preview-idle" id="cw-preview-idle">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                  opacity="0.35">
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M12 8v4M12 16h.01" />
+                </svg>
+                <span>Click the wheel to pick</span>
+                <small style="font-size:0.7rem; opacity:0.6">Drag Vibrance ← for pastels</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="cw-info-card">
+            <div class="cw-info-label">Your Chosen Shade</div>
+            <h3 class="cw-color-name" id="cw-color-name">—</h3>
+            <div class="cw-color-values">
+              <div class="cw-value-chip">
+                <span class="chip-label">HEX</span>
+                <span class="chip-val" id="cw-hex">—</span>
+              </div>
+              <div class="cw-value-chip">
+                <span class="chip-label">RGB</span>
+                <span class="chip-val" id="cw-rgb">—</span>
+              </div>
+              <div class="cw-value-chip">
+                <span class="chip-label">HSL</span>
+                <span class="chip-val" id="cw-hsl">—</span>
+              </div>
+            </div>
+            <div class="cw-actions">
+              <button class="preview-copy-btn" id="cw-copy-btn" aria-label="Copy hex code">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="9" y="9" width="13" height="13" rx="2" />
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
+                </svg>
+                Copy HEX
+              </button>
+              <a href="#" class="preview-whatsapp-btn" id="cw-whatsapp-btn" target="_blank" rel="noopener">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z" />
+                </svg>
+                Send to Rajwadi
+              </a>
+            </div>
+          </div>
+
+          <!-- Quick fabric shade picks -->
+          <div class="cw-quick-picks">
+            <div class="cw-quick-label">Popular Fabric Shades</div>
+            <div class="cw-quick-grid">
+              <button class="cw-quick-dot" data-hex="#8B0000" data-name="Rajwadi Crimson" title="Rajwadi Crimson"
+                style="background:#8B0000"></button>
+              <button class="cw-quick-dot" data-hex="#C71585" data-name="Rani Magenta" title="Rani Magenta"
+                style="background:#C71585"></button>
+              <button class="cw-quick-dot" data-hex="#E91E8C" data-name="Gulabi Pink" title="Gulabi Pink"
+                style="background:#E91E8C"></button>
+              <button class="cw-quick-dot" data-hex="#FF6B35" data-name="Holi Orange" title="Holi Orange"
+                style="background:#FF6B35"></button>
+              <button class="cw-quick-dot" data-hex="#F5A623" data-name="Saffron Zari" title="Saffron Zari"
+                style="background:#F5A623"></button>
+              <button class="cw-quick-dot" data-hex="#FFDD00" data-name="Pitambari Yellow" title="Pitambari Yellow"
+                style="background:#FFDD00"></button>
+              <button class="cw-quick-dot" data-hex="#2C5F2E" data-name="Emerald Velvet" title="Emerald Velvet"
+                style="background:#2C5F2E"></button>
+              <button class="cw-quick-dot" data-hex="#00A693" data-name="Peacock Teal" title="Peacock Teal"
+                style="background:#00A693"></button>
+              <button class="cw-quick-dot" data-hex="#1B2A7B" data-name="Jaipur Royal Blue" title="Jaipur Royal Blue"
+                style="background:#1B2A7B"></button>
+              <button class="cw-quick-dot" data-hex="#4B0082" data-name="Amethyst Silk" title="Amethyst Silk"
+                style="background:#4B0082"></button>
+              <button class="cw-quick-dot" data-hex="#C9A96E" data-name="Jaipur Gold" title="Jaipur Gold"
+                style="background:#C9A96E"></button>
+              <button class="cw-quick-dot" data-hex="#D2691E" data-name="Sandalwood" title="Sandalwood"
+                style="background:#D2691E"></button>
+              <button class="cw-quick-dot" data-hex="#B5651D" data-name="Mitti Terracotta" title="Mitti Terracotta"
+                style="background:#B5651D"></button>
+              <button class="cw-quick-dot" data-hex="#5C1A1A" data-name="Velvet Wine" title="Velvet Wine"
+                style="background:#5C1A1A"></button>
+              <button class="cw-quick-dot" data-hex="#FAF6EE" data-name="Pure Ivory" title="Pure Ivory"
+                style="background:#FAF6EE; outline:1.5px solid #d4c4a8;"></button>
+              <button class="cw-quick-dot" data-hex="#1A1A1A" data-name="Kohl Black" title="Kohl Black"
+                style="background:#1A1A1A"></button>
+            </div>
+          </div>
+
+
+          <p class="preview-hint">Share the colour name and code on WhatsApp when you book — we'll source the exact
+            fabric!</p>
+        </div>
+
+      <!-- END palette section inner -->
+    </div>
+  </section>
+  <!-- END palette section -->
+
+  <!-- ========== ROYAL COLOR THEORY SECTION ========== -->
+  <section class="color-theory" id="color-theory" aria-label="Royal Color Theory">
+    <div class="theory-bg-ornament" aria-hidden="true"></div>
+
+    <div class="container">
+      <div class="theory-header">
+        <div class="section-label reveal">The Royal Chroma</div>
+        <h2 class="section-title reveal delay-1">
+          The Color <span>Consultation</span>
+        </h2>
+        <p class="section-subtitle reveal delay-2" style="max-width: 700px; margin: 0 auto;">
+          Not sure which shade perfectly complements your skin tone, or which fabric looks best under your venue's lighting? Our master designers and colorists are here to guide you through the intricacies of color theory.
+        </p>
+      </div>
+
+      <!-- Classy Contact Us Callout -->
+      <div class="theory-contact-callout reveal delay-3" style="margin-top: 50px;">
+        <div class="callout-inner" style="flex-direction: column; text-align: center; max-width: 900px; margin: 0 auto; padding: 4rem 3rem;">
+          <div class="callout-content" style="max-width: 600px; margin: 0 auto 2rem auto;">
+            <h3 style="font-size: 2.2rem; margin-bottom: 1rem;">Coordinate Your Personal Color Story</h3>
+            <p style="font-size: 1.05rem; opacity: 0.9;">From finding the exact saffron for warm undertones, to the perfect jewel-emerald for cool undertones — let our experts hand-pick the shades that will make you radiate confidence.</p>
+          </div>
+          <div class="callout-action" style="justify-content: center; width: 100%;">
+            <a href="https://wa.me/918559985003?text=Hello%20Rajwadi%20Boutique%20Jaipur!%20%E2%9C%A8%20I%20would%20like%20to%20request%20a%20personal%20color%20theory%20and%20undertone%20matching%20consultation%20with%20your%20stylist."
+              class="btn-primary premium-theory-btn magnetic" target="_blank" rel="noopener" style="margin: 0 auto;">
+              Consult a Colorist
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  
+
+  <!-- ========== THE HERITAGE DIARY (TESTIMONIALS) ========== -->
+  <section class="testimonials" id="testimonials" aria-label="Client Testimonials">
+    <div class="diary-paper-overlay" aria-hidden="true"></div>
+    <div class="diary-bg-glow" aria-hidden="true"></div>
+
+    <div class="container">
+      <div class="testimonials-header">
+        <div class="section-label reveal">The Heritage Diary</div>
+        <h2 class="section-title reveal delay-1">
+          Woven in <span>Gratitude</span>
+        </h2>
+        <p class="section-subtitle reveal delay-2">
+          Flip through the personal diary entries and handwritten stories shared by our patrons and brides across the
+          globe.
+        </p>
+      </div>
+
+      <!-- Redesigned User-Friendly Desk Layout -->
+      <div class="scrapbook-desk reveal delay-3">
+        <!-- Open Diary Notebook Page -->
+        <div class="diary-notebook">
+          <div class="diary-binder">
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+
+          <div class="diary-pages">
+            <!-- Testimonials injected via script.js -->
+          </div>
+
+          <!-- Diary Navigation Controls -->
+          <div class="diary-controls">
+            <button class="diary-nav-btn prev magnetic" id="diary-prev" aria-label="Previous Testimonial">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="19" y1="12" x2="5" y2="12"></line>
+                <polyline points="12 19 5 12 12 5"></polyline>
+              </svg>
+            </button>
+            <button class="diary-nav-btn next magnetic" id="diary-next" aria-label="Next Testimonial">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+          </div>
+
+          <!-- Hand-written scrap details -->
+          <div class="scrap-sticker stamp-sticker">RAJWADI JAIPUR</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== COUTURE TRANSFORMATION SECTION ========== -->
+  <section class="transformation" id="transformation" aria-label="Couture Transformation">
+    <div class="trans-gold-overlay" aria-hidden="true"></div>
+    <div class="container">
+      <div class="trans-header">
+        <div class="section-label reveal">Atelier Heritage</div>
+        <h2 class="section-title reveal delay-1">
+          Memory <span>Weaving</span>
+        </h2>
+        <p class="section-subtitle reveal delay-2">
+          Breathe new life into your sacred garments. We artfully reconstruct pre-loved bridal lehengas or heirloom
+          sarees into premium, modern drape gowns and capes.
+        </p>
+      </div>
+
+      <div class="trans-simple-layout">
+        <!-- Centered: Interactive Before/After Visual Slider -->
+        <div class="trans-visual-panel reveal delay-3">
+          <div class="before-after-slider" id="ba-slider">
+            <!-- After Image (Base) -->
+            <img src="assets/after_saree.png" alt="Transformed Modern Saree Gown" class="slider-image after-img">
+
+            <!-- Before Image (Overlay clipped) -->
+            <div class="before-overlay" id="slider-before-overlay">
+              <img src="assets/before_lehenga.png" alt="Vintage Bridal Lehenga" class="slider-image before-img">
+            </div>
+
+            <!-- Labels -->
+            <span class="slider-label before-label">Before: Vintage Lehenga</span>
+            <span class="slider-label after-label">After: Modern Gown</span>
+
+            <!-- Sliding Handle Needle -->
+            <div class="slider-handle" id="slider-handle">
+              <div class="handle-line"></div>
+              <div class="handle-needle">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="18" y1="8" x2="22" y2="12"></line>
+                  <line x1="18" y1="16" x2="22" y2="12"></line>
+                  <line x1="6" y1="8" x2="2" y2="12"></line>
+                  <line x1="6" y1="16" x2="2" y2="12"></line>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                </svg>
+              </div>
+              <div class="handle-line"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Center CTA Box -->
+        <div class="trans-cta-centered reveal delay-4">
+          <p>Own a vintage heirloom? Let's discuss a modern design transformation.</p>
+          <a href="https://wa.me/918559985003?text=Hello%20Rajwadi%20Boutique%20Jaipur!%20%E2%9C%A8%20I%20am%20interested%20in%20transforming%20my%20vintage%20garment%20into%20a%20modern%20silhouette%20design."
+            class="btn-primary premium-trans-btn magnetic" target="_blank" rel="noopener">
+            Discuss Your Transformation
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ATELIER REELS SECTION ========== -->
+  <section class="reels" id="reels" aria-label="Atelier Reels">
+    <!-- Interactive Reels Particle Canvas -->
+    <canvas id="reels-particles" aria-hidden="true"></canvas>
+
+    <!-- Floating Background Silk Ribbons -->
+    <div class="reels-ribbon ribbon-left" aria-hidden="true">
+      <svg viewBox="0 0 200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M 0 0 C 120 200, -80 400, 100 800" stroke="url(#ribbon-grad-1)" stroke-width="3" opacity="0.3" />
+        <defs>
+          <linearGradient id="ribbon-grad-1" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="var(--gold-light)" />
+            <stop offset="100%" stop-color="var(--gold)" />
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
+    <div class="reels-ribbon ribbon-right" aria-hidden="true">
+      <svg viewBox="0 0 200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M 200 0 C 80 200, 280 400, 100 800" stroke="url(#ribbon-grad-2)" stroke-width="2" opacity="0.25" />
+        <defs>
+          <linearGradient id="ribbon-grad-2" x1="100%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="var(--gold-dark)" />
+            <stop offset="100%" stop-color="var(--gold-light)" />
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
+
+    <div class="container">
+      <div class="reels-header">
+        <div class="section-label reveal">The Digital Atelier</div>
+        <h2 class="section-title reveal delay-1">
+          Stories in <span>Motion</span>
+        </h2>
+        <p class="section-subtitle reveal delay-2">
+          Step into our workshop. Click on any reel to watch the hand embroidery, heritage draping, and custom
+          transformations on Instagram.
+        </p>
+      </div>
+
+      <!-- Scrollable 3D Reels Track -->
+      <div class="reels-workspace reveal delay-3">
+        <!-- Curved Background Stitching Thread -->
+        <div class="reels-bg-thread" aria-hidden="true">
+          <svg viewBox="0 0 1440 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M -100 120 C 300 300, 600 20, 1000 200 C 1200 280, 1400 120, 1600 120" stroke="var(--gold)"
+              stroke-width="1" stroke-dasharray="8 8" opacity="0.18" />
+          </svg>
+        </div>
+        <div class="reels-track-container" id="reels-track-container">
+          <div class="reels-track" id="reels-track">
+
+            <!-- Reels will be injected here via script.js -->
+
+          </div>
+        </div>
+
+        <!-- Scrollbar Indicator -->
+        <div class="reels-scrollbar">
+          <div class="reels-scrollbar-track">
+            <div class="reels-scrollbar-thumb" id="reels-thumb"></div>
+          </div>
+        </div>
+
+        <!-- Bottom Instagram Link Indicator -->
+        <div class="reels-instagram-cta">
+          <a href="https://instagram.com/rajwadi_boutique" target="_blank" rel="noopener" class="btn-outline magnetic">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              style="margin-right:8px; vertical-align:middle;">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+            </svg>
+            Follow @rajwadi_boutique on Instagram
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========== GLOBAL ORDERS SECTION ========== -->
+  <section class="global-orders" id="global-orders" aria-label="Worldwide Orders">
+
+    <!-- Background decorative elements -->
+    <div class="global-bg-pattern" aria-hidden="true"></div>
+    <div class="global-bg-globe" aria-hidden="true">
+      <svg viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="200" cy="200" r="180" stroke="var(--gold)" stroke-width="0.5" stroke-dasharray="4 8" opacity="0.12">
+          <animateTransform attributeName="transform" type="rotate" from="0 200 200" to="360 200 200" dur="90s"
+            repeatCount="indefinite" />
+        </circle>
+        <circle cx="200" cy="200" r="140" stroke="var(--gold)" stroke-width="0.3" stroke-dasharray="2 12"
+          opacity="0.08">
+          <animateTransform attributeName="transform" type="rotate" from="360 200 200" to="0 200 200" dur="70s"
+            repeatCount="indefinite" />
+        </circle>
+        <ellipse cx="200" cy="200" rx="180" ry="70" stroke="var(--gold)" stroke-width="0.4" opacity="0.1">
+          <animateTransform attributeName="transform" type="rotate" from="0 200 200" to="360 200 200" dur="50s"
+            repeatCount="indefinite" />
+        </ellipse>
+        <ellipse cx="200" cy="200" rx="180" ry="70" stroke="var(--gold)" stroke-width="0.3" opacity="0.07"
+          transform="rotate(60 200 200)">
+          <animateTransform attributeName="transform" type="rotate" from="60 200 200" to="420 200 200" dur="60s"
+            repeatCount="indefinite" />
+        </ellipse>
+      </svg>
+    </div>
+
+    <div class="container">
+
+      <!-- Section Header -->
+      <div class="global-header">
+        <div class="section-label reveal">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+            style="vertical-align: -2px; margin-right: 6px; color: var(--gold);">
+            <circle cx="12" cy="12" r="10" />
+            <path
+              d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+          </svg>
+          We Ship Worldwide
+        </div>
+        <h2 class="section-title reveal delay-1">
+          Your Custom Outfit, <span>Delivered Anywhere</span>
+        </h2>
+        <p class="section-subtitle reveal delay-2">
+          Whether you're in the USA, UK, Canada, Australia, UAE, or anywhere else — we customise ethnic, western,
+          indo-western outfits for women, men &amp; kids and deliver them right to your door. Video consultations, easy
+          self-measurements &amp; worldwide shipping — all tailored just for you.
+        </p>
+      </div>
+
+      <!-- Main Content: Two-column layout -->
+      <div class="global-split reveal delay-3">
+
+        <!-- LEFT: Process Steps & Info -->
+        <div class="global-left">
+
+          <!-- How It Works - Vertical Steps -->
+          <div class="global-process">
+            <div class="global-process-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5">
+                <path d="M12 2l2 7h7l-5.5 4 2 7L12 16l-5.5 4 2-7L3 9h7z" />
+              </svg>
+              How It Works
+            </div>
+
+            <div class="global-step">
+              <div class="global-step-num">01</div>
+              <div class="global-step-content">
+                <h4>Share Your Vision</h4>
+                <p>Send us a photo, Pinterest board, or just describe what you want — we customise everything from
+                  scratch for women, men & kids of all ages.</p>
+              </div>
+            </div>
+
+            <div class="global-step">
+              <div class="global-step-num">02</div>
+              <div class="global-step-content">
+                <h4>Video Consultation</h4>
+                <p>Jump on a video call with our stylist. Discuss fabrics, colours, embroidery details & design
+                  preferences in real time.</p>
+              </div>
+            </div>
+
+            <div class="global-step">
+              <div class="global-step-num">03</div>
+              <div class="global-step-content">
+                <h4>Easy Self-Measurement</h4>
+                <p>Follow our simple video guide to measure yourself at home — or visit any local tailor and share the
+                  numbers with us.</p>
+              </div>
+            </div>
+
+            <div class="global-step">
+              <div class="global-step-num">04</div>
+              <div class="global-step-content">
+                <h4>Custom-Made & Delivered</h4>
+                <p>Your outfit is stitched and customised to perfection, then shipped worldwide with tracking. Premium
+                  packaging, straight to your door.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category Showcase Chips -->
+          <div class="global-categories">
+            <div class="global-cat-label">We Customise For Everyone</div>
+            <div class="global-cat-grid">
+              <div class="global-cat-chip">
+                <span class="global-cat-icon">👗</span>
+                <span>Ethnic Wear</span>
+              </div>
+              <div class="global-cat-chip">
+                <span class="global-cat-icon">👠</span>
+                <span>Western Wear</span>
+              </div>
+              <div class="global-cat-chip">
+                <span class="global-cat-icon">🪷</span>
+                <span>Indo-Western</span>
+              </div>
+              <div class="global-cat-chip">
+                <span class="global-cat-icon">💎</span>
+                <span>Bridal Couture</span>
+              </div>
+              <div class="global-cat-chip">
+                <span class="global-cat-icon">👔</span>
+                <span>Men's Wear</span>
+              </div>
+              <div class="global-cat-chip">
+                <span class="global-cat-icon">🧒</span>
+                <span>Kids' Outfits</span>
+              </div>
+              <div class="global-cat-chip">
+                <span class="global-cat-icon">🧵</span>
+                <span>Heritage Revival</span>
+              </div>
+              <div class="global-cat-chip">
+                <span class="global-cat-icon">👨‍👩‍👧‍👦</span>
+                <span>Family Sets</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT: Feature Cards + Video -->
+        <div class="global-right">
+
+          <!-- Video Call Feature Card -->
+          <div class="global-feature-card">
+            <div class="global-feature-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="4" width="14" height="14" rx="3" />
+                <path d="M16 9l4-2.5v9L16 13" />
+                <circle cx="9" cy="11" r="2.5" stroke-width="1.2" />
+              </svg>
+            </div>
+            <div class="global-feature-content">
+              <h4>Live Video Consultations</h4>
+              <p>Discuss your design, see fabric options live, and get styled by our expert team — right from your home,
+                anywhere in the world.</p>
+            </div>
+            <div class="global-feature-badge">Free</div>
+          </div>
+
+          <!-- Measurement Guide Video Embed -->
+          <div class="global-video-card">
+            <div class="global-video-header">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2">
+                <path
+                  d="M14.752 11.168l-6.586-3.763A1 1 0 0 0 6.667 8.2v7.6a1 1 0 0 0 1.499.795l6.586-3.763a1 1 0 0 0 0-1.664z" />
+                <circle cx="12" cy="12" r="10" />
+              </svg>
+              <span>Measurement Guide Video</span>
+            </div>
+            <div class="global-video-wrap">
+              <div class="global-video-placeholder" id="global-video-placeholder">
+                <div class="global-video-play-btn">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32">
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                </div>
+                <div class="global-video-overlay-text">
+                  <span>📏 How to Measure Yourself at Home</span>
+                  <small>2 min guide · No tailor needed</small>
+                </div>
+              </div>
+            </div>
+            <p class="global-video-note">Follow this simple 2-minute guide to take your measurements at home. Share them
+              on WhatsApp and we'll handle the rest!</p>
+          </div>
+
+          <!-- Worldwide Shipping Card -->
+          <div class="global-feature-card shipping-card">
+            <div class="global-feature-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+            </div>
+            <div class="global-feature-content">
+              <h4>Worldwide Shipping</h4>
+              <p>Premium tracked shipping to 50+ countries. Your outfit arrives in luxury packaging, ready to wear.</p>
+            </div>
+            <div class="global-shipping-flags" aria-hidden="true">
+              🇺🇸 🇬🇧 🇨🇦 🇦🇺 🇦🇪 🇸🇬 🇩🇪 🇳🇿
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom CTA -->
+      <div class="global-cta reveal delay-4">
+        <div class="global-cta-inner">
+          <div class="global-cta-text">
+            <h3>Want a custom outfit from abroad?</h3>
+            <p>No matter your age, style, or occasion — we'll customise the perfect outfit for you. Drop us a message
+              and let's get started with a free video call.</p>
+          </div>
+          <a href="https://wa.me/918559985003?text=Hello%20Rajwadi%20Boutique!%20I%27m%20ordering%20from%20abroad%20and%20would%20like%20a%20video%20consultation."
+            class="btn-primary magnetic" target="_blank" rel="noopener">
+            Book Free Video Call
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- END Global Orders -->
+
+  <!-- ========== UNSTITCHED SUITS SHOP ========== -->
+  <section class="suits-shop" id="suits-shop" aria-label="Unstitched Suits Collection">
+    <div class="container">
+
+      <!-- Section Header -->
+      <div class="suits-header">
+        <div class="section-label reveal">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+            style="vertical-align:-2px; margin-right:6px; color:var(--gold);">
+            <rect x="3" y="3" width="18" height="18" rx="2" />
+            <path d="M3 9h18M9 21V9" />
+          </svg>
+          Shop Collection
+        </div>
+        <h2 class="section-title reveal delay-1">
+          Unstitched Suits, <span>Ready to Customise</span>
+        </h2>
+        <p class="suits-subtitle reveal delay-2">
+          Browse our curated collection of premium unstitched suits. Pick a design, tap Order, and share the code on
+          WhatsApp — we'll take it from there. Custom stitching available for all sizes.
+        </p>
+      </div>
+
+      <!-- Category Filter Chips -->
+      <div class="suits-filters reveal delay-2">
+        <button class="suits-filter-chip active" data-filter="all">All</button>
+        <button class="suits-filter-chip" data-filter="ethnic">Ethnic</button>
+        <button class="suits-filter-chip" data-filter="party">Party Wear</button>
+        <button class="suits-filter-chip" data-fil      <!-- Product Grid (Dynamically Populated by CMS) -->
+      <div class="suits-grid reveal delay-3" id="suits-grid">
+        <!-- Suits will be injected here via script.js -->
+      </div>
+
+      <!-- Bottom info note -->
+      <div class="suits-note reveal delay-4">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5">
+          <circle cx="12" cy="12" r="10" />
+          <path d="M12 16v-4M12 8h.01" />
+        </svg>
+        <p>Tap <strong>Order via WhatsApp</strong> to share the suit code with us. We'll confirm availability, discuss
+          customisation options, and arrange delivery — no payment needed upfront.</p>
+      </div>
+
+    </div>
+  </section>
+  <!-- END Suits Shop -->
+
+  <!-- ========== OUR STORY / FOUNDER SECTION ========== -->
+  <section class="our-story" id="our-story" aria-label="Our Story">
+
+    <!-- Decorative background -->
+    <div class="story-bg-decor" aria-hidden="true">
+      <div class="story-bg-circle"></div>
+      <div class="story-bg-circle story-bg-circle-2"></div>
+    </div>
+
+    <div class="container">
+
+      <!-- Section Header -->
+      <div class="story-header">
+        <div class="section-label reveal">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+            style="vertical-align:-2px; margin-right:6px; color:var(--gold);">
+            <path d="M12 20l9-5-9-5-9 5 9 5z" />
+            <path d="M12 12V4" />
+            <path d="M4.93 10.93l2.83 2.83" />
+            <path d="M19.07 10.93l-2.83 2.83" />
+          </svg>
+          The Story Behind Rajwadi
+        </div>
+        <h2 class="section-title reveal delay-1">
+          Where Tradition Meets <span>Your Vision</span>
+        </h2>
+      </div>
+
+      <!-- Main Story Layout -->
+      <div class="story-layout reveal delay-2">
+
+        <!-- LEFT: Founder Portrait -->
+        <div class="story-portrait-col">
+          <div class="story-portrait-frame">
+            <!-- Gold ornamental border -->
+            <div class="story-portrait-ornament" aria-hidden="true">
+              <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="4" y="4" width="192" height="192" rx="24" stroke="var(--gold)" stroke-width="1"
+                  stroke-dasharray="6 4" opacity="0.4" />
+                <rect x="12" y="12" width="176" height="176" rx="20" stroke="var(--gold)" stroke-width="0.5"
+                  opacity="0.25" />
+              </svg>
+            </div>
+            <div class="story-portrait-img">
+              <img src="assets/logo.png" alt="Rajwadi Boutique Founder" />
+            </div>
+            <!-- Floating tag -->
+            <div class="story-portrait-tag">
+              <span class="story-tag-year">Est. 2018</span>
+              <span class="story-tag-location">📍 Jaipur, Rajasthan</span>
+            </div>
+          </div>
+
+          <!-- Milestones Strip -->
+          <div class="story-milestones">
+            <div class="story-milestone">
+              <div class="story-milestone-num">5000+</div>
+              <div class="story-milestone-label">Happy Customers</div>
+            </div>
+            <div class="story-milestone">
+              <div class="story-milestone-num">12+</div>
+              <div class="story-milestone-label">Countries Served</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT: Story Content -->
+        <div class="story-content-col">
+
+          <!-- Pull Quote -->
+          <blockquote class="story-pullquote">
+            <div class="story-quote-mark" aria-hidden="true">"</div>
+            <p>Every stitch carries a story. Every outfit we create isn't just fabric — it's a piece of someone's most
+              cherished moment.</p>
+          </blockquote>
+
+          <!-- Narrative -->
+          <div class="story-narrative">
+            <p>
+              Rajwadi Boutique was born from a deeply personal space — watching mothers gently pass down their wedding heirlooms, seeing the nervous joy of a bride at her final fitting, and witnessing a family beam with pride in matching festive wear. What started as a small, passionate tailoring unit in the heart of Jaipur has blossomed into a sanctuary where memories are woven into fabric.
+            </p>
+            <p>
+              We specialise in <strong>fully customised outfits</strong> because we believe every milestone deserves its own unique canvas. From a grandmother wanting to preserve her legacy in a classic silk blouse, to a mother designing matching outfits to celebrate her toddler's first festival — we don't just stitch clothes. We stitch heritage, emotions, and dreams.
+            </p>
+            <p>
+              Our master karigars (artisans) pour their souls into every thread. Bringing decades of experience in hand-embroidery, zardozi work, and precision tailoring, they combine the royal, traditional craftsmanship with your personal vision. For us, a garment isn't finished when the stitching is done; it's finished when you look in the mirror and finally see your dream staring back at you.
+            </p>
+            <p>
+              With <strong>video consultations</strong>, <strong>easy self-measurement guides</strong>, and
+              <strong>worldwide shipping</strong>, distance is never a barrier. No matter where you are in the world, we are here to craft your next beautiful memory — and it's just a WhatsApp message away.
+            </p>
+          </div>
+
+          <!-- Signature -->
+          <div class="story-signature">
+            <div class="story-signature-line"></div>
+            <div class="story-signature-text">
+              <span class="story-sig-name">Team Rajwadi</span>
+              <span class="story-sig-role">Crafting dreams, one stitch at a time ✨</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Philosophy Cards -->
+      <div class="story-philosophy reveal delay-3">
+        <div class="story-philo-card">
+          <div class="story-philo-icon">🪡</div>
+          <h4>100% Custom</h4>
+          <p>Every outfit is made from scratch to your exact measurements, design, and preferences. No ready-made, no
+            compromises.</p>
+        </div>
+        <div class="story-philo-card">
+          <div class="story-philo-icon">🤝</div>
+          <h4>Personal Touch</h4>
+          <p>You speak directly with our design team. We listen, we suggest, and we create something uniquely yours.</p>
+        </div>
+        <div class="story-philo-card">
+          <div class="story-philo-icon">🌍</div>
+          <h4>Globally Trusted</h4>
+          <p>From Jaipur to New York, London to Dubai — our customers trust us with their most important outfits.</p>
+        </div>
+        <div class="story-philo-card">
+          <div class="story-philo-icon">💎</div>
+          <h4>Premium Quality</h4>
+          <p>We source the finest fabrics and use traditional hand-crafting techniques that have been perfected over
+            generations.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- END Our Story -->
+
+  <!-- ========== MINIMAL CONTACT & SOCIAL FOOTER ========== -->
+  <footer class="footer-contact-section" aria-label="Contact Us">
+    <div class="container">
+      <div class="footer-contact-layout">
+        <!-- Contact info -->
+        <div class="footer-contact-info">
+          <h3>Rajwadi Boutique</h3>
+          <p class="footer-address">📍 B-1 & 2 Dhanshree Tower 1st, opposite SHEKHAWATI HOSPITAL & RESEARCH CENTRE, Central Spine, Vidyadhar Nagar, Jaipur, Rajasthan 302039</p>
+          <a href="tel:+918559985003" class="footer-contact-link" style="margin-bottom: 0.25rem;">📞 +91 85599 85003</a>
+          <a href="mailto:boutiquerajwadi@gmail.com" class="footer-contact-link" style="font-size: 1.15rem;">✉️ boutiquerajwadi@gmail.com</a>
+        </div>
+
+        <!-- Social links -->
+        <div class="footer-social-links">
+          <a href="https://instagram.com/rajwadi_boutique" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+            </svg>
+            Instagram
+          </a>
+          <a href="https://www.facebook.com/rajwadiboutiquejaipur/" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+            </svg>
+            Facebook
+          </a>
+          <a href="https://www.google.com/maps/dir//Rajwadi+Boutique,+B-1+%26+2+Dhanshree+Tower+1st,+opposite+SHEKHAWATI+HOSPITAL+%26+RESEARCH+CENTRE,+Central+Spine,+Vidyadhar+Nagar,+Jaipur,+Rajasthan+302039" target="_blank" rel="noopener" aria-label="Get Directions">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+            Get Directions
+          </a>
+        </div>
+      </div>
+
+      <!-- Embedded Google Map -->
+      <div class="footer-map-container reveal delay-2">
+        <iframe src="https://maps.google.com/maps?q=Rajwadi+Boutique,+B-1+%26+2+Dhanshree+Tower,+Vidyadhar+Nagar,+Jaipur&t=&z=16&ie=UTF8&iwloc=&output=embed" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+      <div class="footer-bottom-copyright">
+        <p>&copy; 2026 Rajwadi Boutique Jaipur. Crafted with love by <a href="https://hritika.co.in" target="_blank" rel="noopener" style="color: var(--gold-dark); text-decoration: none; font-weight: 600; transition: color 0.3s ease;">Hritika</a>.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
